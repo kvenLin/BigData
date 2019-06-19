@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.imooc.bigdata</groupId>
+    <artifactId>hadoop-train-v2</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0</version>
+    <name>hadoop-train-v2</name>
+
+    <!-- 定义hadoop版本号 -->
+    <properties>
+        <hadoop.version>2.6.0-cdh5.15.1</hadoop.version>
+    </properties>
+
+    <!--  引入cdh的仓库  -->
+    <repositories>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- 这里依赖默认是下载不下来的,需要在上方添加repository -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+    </dependencies>
+
+</project>

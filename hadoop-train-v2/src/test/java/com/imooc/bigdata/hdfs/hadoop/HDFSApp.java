@@ -126,7 +126,7 @@ public class HDFSApp {
      */
     @Test
     public void listFiles() throws Exception {
-        FileStatus[] fileStatuses = fileSystem.listStatus(new Path("/hdfsapi/test"));
+        FileStatus[] fileStatuses = fileSystem.listStatus(new Path("/"));
         for (FileStatus fileStatus : fileStatuses) {
             String isDir = fileStatus.isDirectory() ? "文件夹" : "文件";
             String permission = fileStatus.getPermission().toString();
@@ -139,6 +139,56 @@ public class HDFSApp {
                     + "\t" + path
             );
         }
+    }
+
+    /**
+     * 递归查看目标文件夹下的所有文件
+     * @throws Exception
+     */
+    @Test
+    public void listFilesRecursive() throws Exception {
+        RemoteIterator<LocatedFileStatus> files = fileSystem.listFiles(new Path("/hdfsapi/test"), true);
+        while (files.hasNext()) {
+            LocatedFileStatus file = files.next();
+            String isDir = file.isDirectory() ? "文件夹" : "文件";
+            String permission = file.getPermission().toString();
+            short replication = file.getReplication();
+            long len = file.getLen();
+            String path = file.getPath().toString();
+
+            System.out.println(isDir + "\t" + permission
+                    + "\t" + replication + "\t" + len
+                    + "\t" + path
+            );
+        }
+    }
+
+
+    /**
+     * 查看文件块信息
+     * @throws Exception
+     */
+    @Test
+    public void getFileBlockLocations() throws Exception {
+        FileStatus fileStatus = fileSystem.getFileStatus(new Path("/hdfsapi/test/sprk.tar.gz"));
+        BlockLocation[] blocks = fileSystem.getFileBlockLocations(fileStatus, 0, fileStatus.getLen());
+        for (BlockLocation block : blocks) {
+            for (String name : block.getNames()) {
+                System.out.println(name + " : " + block.getOffset() + " : " + block.getLength());
+            }
+        }
+
+    }
+
+    /**
+     * 删除文件
+     * @throws Exception
+     */
+    @Test
+    public void delete() throws Exception {
+        //第二个参数是是否需要递归删除
+        boolean result = fileSystem.delete(new Path("/hdfsapi/test/sprk.tar.gz"), true);
+        System.out.println(result);
     }
 
     @After

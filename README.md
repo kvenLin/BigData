@@ -65,6 +65,21 @@
 * NameNode也决定了block和DataNodes的对应关系
 * 通常情况下: 1个node部署一个组件
 ![HDFS架构图](src/image/hdfsarchitecture.png)
+#### HDFS具体传输流程
+* 写数据流程:
+
+![hdfs文件传输流程图](src/image/hdfs_put.png)
+* 读数据流程:
+
+![hdfs文件传输流程图](src/image/hdfs_get.png)
+#### HDFS元数据管理
+* **元数据**: 实际上就是HDFS的目录结构以及每个文件的block信息(id, 副本系数, block存放在哪个DataNode上)
+* 存在什么地方: 对应配置 ${hadoop.tmp.dir}/dfs/name/....
+* 元数据存放在文件中:
+> 内存中的元数据信息会定期写入到fsimage文件中,但是每次有命令执行时都会写入到edtis日志中,
+当NameNode挂了后,再次启动时会根据SecondaryNameNode同步后的fsimage文件和edtis日志信息重新将数据加载到内存,
+再通过内存中现有的数据信息生成一份新的fsimage发送给NameNode,这时NameNode加载新的fsimage就可以了
+![hdfs_元数据存储.png](src/image/hdfs_元数据存储.png)
 #### HDFS命令行操作
 * hadoop fs [generic options]
     * -appendToFile localsrc ... dst: 将本地文件append方式加到目的文件中
@@ -179,3 +194,20 @@
 ## 常见问题
 使用脚本./start-dfs.sh启动后,使用jps查看没有DataNode?
 [解决方案](https://www.cndba.cn/dave/article/3255)
+
+## HDFS实战
+综合实战: 使用HDFS Java API 才完成HDFS文件上的文件的词频统计
+* 词频统计: wordCount
+===> /test/a.txt
+> hello world hello
+
+===> /test/b.txt
+> hello world hello
+
+result: hello 4; world 2
+
+* 假设: 有了解过mapReduce、spark等等,觉得这个操作会会很简单
+* 本实战的要求: 只允许使用HDFS API进行操作
+* 目的:
+    * 掌握HDFS API的操作
+    * 通过这个案例对后续的mapReduce有一个比较好的认识

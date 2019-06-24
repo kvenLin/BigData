@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4783e1b-083b-4a69-9ad6-0d136026f190" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/CaseIgnoreWordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ParamUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/WordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/resources/wordCount.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/hdfs_get.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/hdfs_put.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/hdfs_元数据存储.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-train-v2/src/test/java/com/imooc/bigdata/hdfs/hadoop/HDFSApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-train-v2/src/test/java/com/imooc/bigdata/hdfs/hadoop/HDFSApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/hadoop-train-v2/target/" />
@@ -32,11 +45,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/note.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="252">
-                <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="224">
+                <caret line="110" column="13" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -44,10 +57,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/image/hdfs_put.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="253">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ParamUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/resources/wordCount.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/CaseIgnoreWordCountMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/WordCountMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -55,25 +133,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/test/java/com/imooc/bigdata/hdfs/hadoop/HDFSApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="136" column="40" lean-forward="true" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
+            <state relative-caret-position="158">
+              <caret line="46" column="78" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3004#3137#0" expanded="true" />
-                <element signature="e#3136#3137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.6.0-cdh5.15.1/hadoop-common-2.6.0-cdh5.15.1.jar!/org/apache/hadoop/fs/FileStatus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-              <folding>
-                <element signature="e#4012#4013#0" expanded="true" />
-                <element signature="e#4044#4045#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +156,12 @@
     <findStrings>
       <find>-</find>
       <find>大数据</find>
+      <find>fileStatus</find>
+      <find>ma</find>
     </findStrings>
     <replaceStrings>
       <replace>*</replace>
+      <replace>file</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -111,6 +177,15 @@
         <option value="$PROJECT_DIR$/note.md" />
         <option value="$PROJECT_DIR$/hadoop-train-v2/pom.xml" />
         <option value="$PROJECT_DIR$/hadoop-train-v2/src/test/java/com/imooc/bigdata/hdfs/hadoop/HDFSApp.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocContext.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocMapper.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/WordCountMapper.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ParamUtils.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/Constants.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/resources/wordCount.properties" />
+        <option value="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/CaseIgnoreWordCountMapper.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -139,7 +214,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="727" />
@@ -152,8 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,17 +234,73 @@
               <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigData" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/image" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -184,13 +313,16 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/image" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.imooc.bigdata" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/image" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imooc.bigdata.hadoop.hdfs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/image" />
     </key>
   </component>
@@ -206,8 +338,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HDFSApp.listFiles">
-    <configuration name="HDFSApp.copyFormLocalBigFile (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.HDFSWordCountApp01">
+    <configuration name="HDFSWordCountApp01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hadoop.hdfs.HDFSWordCountApp01" />
+      <module name="hadoop-train-v2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.bigdata.hadoop.hdfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hadoop.hdfs.ParamUtils" />
+      <module name="hadoop-train-v2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.bigdata.hadoop.hdfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HDFSApp.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hadoop-train-v2" />
       <extension name="coverage">
         <pattern>
@@ -217,13 +375,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.imooc.bigdata.hdfs.hadoop" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hdfs.hadoop.HDFSApp" />
-      <option name="METHOD_NAME" value="copyFormLocalBigFile" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HDFSApp.copyFormLocalBigFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HDFSApp.getFileBlockLocations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hadoop-train-v2" />
       <extension name="coverage">
         <pattern>
@@ -233,13 +391,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.imooc.bigdata.hdfs.hadoop" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hdfs.hadoop.HDFSApp" />
-      <option name="METHOD_NAME" value="copyFormLocalBigFile" />
+      <option name="METHOD_NAME" value="getFileBlockLocations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HDFSApp.copyFormLocalFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HDFSApp.listFilesRecursive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hadoop-train-v2" />
       <extension name="coverage">
         <pattern>
@@ -249,39 +407,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.imooc.bigdata.hdfs.hadoop" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hdfs.hadoop.HDFSApp" />
-      <option name="METHOD_NAME" value="copyFormLocalFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HDFSApp.copyToLocalFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hadoop-train-v2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.bigdata.hdfs.hadoop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.bigdata.hdfs.hadoop" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hdfs.hadoop.HDFSApp" />
-      <option name="METHOD_NAME" value="copyToLocalFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HDFSApp.listFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hadoop-train-v2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.bigdata.hdfs.hadoop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.bigdata.hdfs.hadoop" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hdfs.hadoop.HDFSApp" />
-      <option name="METHOD_NAME" value="listFiles" />
+      <option name="METHOD_NAME" value="listFilesRecursive" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,11 +415,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HDFSApp.listFiles" />
-        <item itemvalue="JUnit.HDFSApp.copyToLocalFile" />
-        <item itemvalue="JUnit.HDFSApp.copyFormLocalBigFile (1)" />
-        <item itemvalue="JUnit.HDFSApp.copyFormLocalBigFile" />
-        <item itemvalue="JUnit.HDFSApp.copyFormLocalFile" />
+        <item itemvalue="Application.HDFSWordCountApp01" />
+        <item itemvalue="Application.ParamUtils" />
+        <item itemvalue="JUnit.HDFSApp.delete" />
+        <item itemvalue="JUnit.HDFSApp.getFileBlockLocations" />
+        <item itemvalue="JUnit.HDFSApp.listFilesRecursive" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +446,11 @@
       <workItem from="1560875099343" duration="2351000" />
       <workItem from="1560909692188" duration="30000" />
       <workItem from="1560956459652" duration="768000" />
-      <workItem from="1560957518511" duration="3890000" />
+      <workItem from="1560957518511" duration="4270000" />
+      <workItem from="1561027948895" duration="706000" />
+      <workItem from="1561125308222" duration="1550000" />
+      <workItem from="1561304324672" duration="123000" />
+      <workItem from="1561347089182" duration="15462000" />
     </task>
     <task id="LOCAL-00001" summary="learn hdfs">
       <created>1560961111508</created>
@@ -333,44 +463,44 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HDFSApp_create - 2019.06.19 at 01h 07m 44s.xml">
-      <configuration name="HDFSApp.create" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HDFSApp_rename - 2019.06.19 at 23h 22m 47s.xml">
-      <configuration name="HDFSApp.rename" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HDFSApp_copyFormLocalFile - 2019.06.19 at 23h 29m 07s.xml">
+    <history-entry file="HDFSApp_copyFormLocalFile - 2019.06.24 at 19h 37m 59s.xml">
       <configuration name="HDFSApp.copyFormLocalFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_copyFormLocalBigFile - 2019.06.19 at 23h 42m 46s.xml">
+    <history-entry file="HDFSApp_copyFormLocalFile - 2019.06.24 at 19h 39m 24s.xml">
+      <configuration name="HDFSApp.copyFormLocalFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HDFSApp_copyFormLocalBigFile - 2019.06.24 at 19h 57m 19s.xml">
       <configuration name="HDFSApp.copyFormLocalBigFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_copyFormLocalBigFile_(1) - 2019.06.19 at 23h 44m 19s.xml">
-      <configuration name="HDFSApp.copyFormLocalBigFile (1)" configurationId="JUnit" />
+    <history-entry file="HDFSApp_copyFormLocalFile - 2019.06.24 at 19h 59m 00s.xml">
+      <configuration name="HDFSApp.copyFormLocalFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_copyToLocalFile - 2019.06.20 at 00h 06m 02s.xml">
-      <configuration name="HDFSApp.copyToLocalFile" configurationId="JUnit" />
+    <history-entry file="HDFSApp_create - 2019.06.24 at 19h 59m 16s.xml">
+      <configuration name="HDFSApp.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_listFiles - 2019.06.20 at 00h 13m 36s.xml">
+    <history-entry file="HDFSApp_listFiles - 2019.06.24 at 19h 59m 33s.xml">
       <configuration name="HDFSApp.listFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_listFiles - 2019.06.20 at 00h 14m 18s.xml">
-      <configuration name="HDFSApp.listFiles" configurationId="JUnit" />
+    <history-entry file="HDFSApp_listFilesRecursive - 2019.06.24 at 19h 59m 45s.xml">
+      <configuration name="HDFSApp.listFilesRecursive" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_listFiles - 2019.06.20 at 00h 16m 16s.xml">
-      <configuration name="HDFSApp.listFiles" configurationId="JUnit" />
+    <history-entry file="HDFSApp_getFileBlockLocations - 2019.06.24 at 20h 05m 11s.xml">
+      <configuration name="HDFSApp.getFileBlockLocations" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HDFSApp_listFiles - 2019.06.20 at 00h 17m 08s.xml">
-      <configuration name="HDFSApp.listFiles" configurationId="JUnit" />
+    <history-entry file="HDFSApp_getFileBlockLocations - 2019.06.24 at 20h 07m 42s.xml">
+      <configuration name="HDFSApp.getFileBlockLocations" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HDFSApp_delete - 2019.06.24 at 20h 10m 36s.xml">
+      <configuration name="HDFSApp.delete" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42634000" />
+    <option name="totallyTimeSpent" value="60855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="727" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30533117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32471728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -379,12 +509,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3251634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38398692" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.53104573" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27287582" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="10" />
@@ -539,39 +669,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="648">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.6.0-cdh5.15.1/hadoop-common-2.6.0-cdh5.15.1.jar!/org/apache/hadoop/fs/FileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12510">
+          <caret line="774" column="43" selection-start-line="774" selection-start-column="11" selection-end-line="774" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.6.0-cdh5.15.1/hadoop-common-2.6.0-cdh5.15.1.jar!/org/apache/hadoop/fs/FileStatus.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="1602">
           <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
-            <element signature="e#4012#4013#0" expanded="true" />
-            <element signature="e#4044#4045#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#282#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ImoocMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/WordCountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/test/java/com/imooc/bigdata/hdfs/hadoop/HDFSApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="136" column="40" lean-forward="true" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
+        <state relative-caret-position="158">
+          <caret line="46" column="78" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3004#3137#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note.md">
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/ParamUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/resources/wordCount.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/CaseIgnoreWordCountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image/hdfs_put.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="252">
-            <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="224">
+            <caret line="110" column="13" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>

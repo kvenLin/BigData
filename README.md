@@ -113,7 +113,25 @@
 * 启动时的30s内会进行检测是否是出于SaveMode状态
 * 即当前状态下block的data数据将不会进行复制
 * 接收DataNodes传来的心跳和Blockreport信息(信息包含:当前节点有多少个block)
-
+### MapReduce
+#### MapReduce概述
+* 分布式计算框架
+* 源自于Google的MapReduce论文,论文发表于2004年12月
+* Hadoop MapReduce是Google MapReduce的克隆版
+* MapReduce优点: 海量数据离线处理&易开发&易运行
+* MapReduce缺点: 实时流式计算
+#### MapReduce案例分析
+![WordCount](src/image/mapReduce_wordCount.png)
+#### MapReduce编程模型之执行步骤
+* 准备map处理的输入数据
+* Mapper处理
+* Shuffle
+* Reduce处理
+* 结果输出
+#### MapReducer执行流程
+![MapReducer执行流程](src/image/hadoop_mapReducer.png)
+* Combiner的优点: 能减少IO, 提升作业执行性能
+* **Combiner局限性**: 求平均数
 ### YARN
 
 ![YARN架构体系](src/image/yarn架构体系.jpg)

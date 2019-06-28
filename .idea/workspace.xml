@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4783e1b-083b-4a69-9ad6-0d136026f190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountCombinerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountLocalApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/CaseIgnoreWordCountMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/Constants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/ImoocContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/ImoocMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/ParamUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/hdfs/WordCountMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/mr/wc/WordCountApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/mr/wc/WordCountLocalApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/mr/wc/WordCountMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/com/imooc/bigdata/hadoop/mr/wc/WordCountReducer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/classes/wordCount.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/test-classes/com/imooc/bigdata/hdfs/hadoop/HDFSApp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/target/test-classes/com/imooc/bigdata/hdfs/hadoop/HDFSApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input/wc.input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BigData/image/yarn架构体系.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/hadoop_mapReducer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/mapReduce_wordCount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop-train-v2/src/main/resources/access.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/yarn_process.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -61,8 +38,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="307">
-                <caret line="222" column="19" lean-forward="true" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
+              <first_editor relative-caret-position="186">
+                <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -72,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountCombinerApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+            <state relative-caret-position="256">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -90,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="630">
+              <caret line="40" column="1" selection-start-line="30" selection-end-line="40" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="396">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="540">
               <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,11 +103,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="48" column="103" selection-start-line="48" selection-start-column="103" selection-end-line="48" selection-end-column="103" />
+            <state relative-caret-position="576">
+              <caret line="41" column="52" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/resources/access.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -236,7 +222,7 @@
     <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="724" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -247,6 +233,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,38 +290,12 @@
             <path>
               <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigData" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="wc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigData" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop-train-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigData" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigData" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,6 +328,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/image" />
+      <recent name="$PROJECT_DIR$/hadoop-train-v2/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordCountCombinerApp">
+  <component name="RunManager" selected="Application.WordCountApp">
     <configuration name="HDFSWordCountApp01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.imooc.bigdata.hadoop.hdfs.HDFSWordCountApp01" />
       <module name="hadoop-train-v2" />
@@ -448,8 +411,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCountCombinerApp" />
         <item itemvalue="Application.WordCountApp" />
+        <item itemvalue="Application.WordCountCombinerApp" />
         <item itemvalue="Application.WordCountLocalApp" />
         <item itemvalue="Application.HDFSWordCountApp01" />
         <item itemvalue="Application.ParamUtils" />
@@ -486,7 +449,9 @@
       <workItem from="1561347089182" duration="15586000" />
       <workItem from="1561425240341" duration="10627000" />
       <workItem from="1561458528534" duration="53000" />
-      <workItem from="1561465364244" duration="743000" />
+      <workItem from="1561465364244" duration="6225000" />
+      <workItem from="1561619936289" duration="27000" />
+      <workItem from="1561620026994" duration="3955000" />
     </task>
     <task id="LOCAL-00001" summary="learn hdfs">
       <created>1560961111508</created>
@@ -502,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561392602677</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mapReduce">
+      <created>1561516685195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561516685195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -538,13 +510,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72402000" />
+    <option name="totallyTimeSpent" value="81866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34006462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3513732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -558,7 +529,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27287582" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.272578" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="10" />
@@ -584,7 +555,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="learn hdfs" />
     <MESSAGE value="hdfs api use" />
-    <option name="LAST_COMMIT_MESSAGE" value="hdfs api use" />
+    <MESSAGE value="mapReduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapReduce" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -833,23 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="307">
-            <caret line="222" column="19" lean-forward="true" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountCombinerApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/part-r-00000">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -859,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        <state relative-caret-position="630">
+          <caret line="40" column="1" selection-start-line="30" selection-end-line="40" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -869,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="396">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -879,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/hdfs/HDFSWordCountApp01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="540">
           <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -889,11 +844,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="103" selection-start-line="48" selection-start-column="103" selection-end-line="48" selection-end-column="103" />
+        <state relative-caret-position="576">
+          <caret line="41" column="52" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/resources/access.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -908,6 +870,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-train-v2/src/main/java/com/imooc/bigdata/hadoop/mr/wc/WordCountCombinerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="186">
+            <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

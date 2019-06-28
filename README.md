@@ -72,6 +72,7 @@
 * 读数据流程:
 
 ![hdfs文件传输流程图](src/image/hdfs_get.png)
+* 具体工作原理可以[参考博客](https://www.cnblogs.com/yinzhengjie/p/10679254.html)
 #### HDFS元数据管理
 * **元数据**: 实际上就是HDFS的目录结构以及每个文件的block信息(id, 副本系数, block存放在哪个DataNode上)
 * 存在什么地方: 对应配置 ${hadoop.tmp.dir}/dfs/name/....
@@ -133,8 +134,35 @@
 * Combiner的优点: 能减少IO, 提升作业执行性能
 * **Combiner局限性**: 求平均数
 ### YARN
-
 ![YARN架构体系](src/image/yarn架构体系.jpg)
+#### YARN结构
+* Client: 向RM提交任务、杀死任务等
+* ResourceManager: 
+    * 集群中同一时刻对外提供服务的只有1个,负责资源相关
+    * 处理来自客户端的请求(提交、杀死)
+    * 启动/监控AM
+* NodeManager: 多个
+    * 干活（计算）
+    * 向RM发送心跳信息、任务的执行情况、启动任务
+    * 接收RM的请求来启动任务
+    * 接收AM请求的命令
+* ApplicationMaster: 
+    * 每个应用程序对应一个AM
+    * AM会向RM申请资源用于在NM上启动对应的Task
+    * 为每个Task想RM申请资源(container)
+    * 任务的监控
+* container: 
+    * 任务运行的抽象
+    * memory、cpu...
+    * task是运行在container里面的
+* master/slave: RM/NM
+* 三种调度器: 
+    * 先进先出调度器
+    * 容量调度器
+    * 公平调度器
+#### YARN执行流程
+![启动流程](src/image/yarn_process.png)
+
 ## Linux环境记录
 * 目录结构:
     * software: 存放课程所使用的软件安装包
